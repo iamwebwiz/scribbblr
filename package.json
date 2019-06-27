@@ -1,0 +1,23 @@
+{
+  "name": "scribbblr",
+  "version": "1.0.0",
+  "description": "A command line utility for taking notes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamwebwiz/scribbblr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamwebwiz/scribbblr/issues"
+  },
+  "homepage": "https://github.com/iamwebwiz/scribbblr#readme",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
+}
