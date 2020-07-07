@@ -11,8 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/iamwebwiz/scribbblr.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "scribbble",
+    "note",
+    "mongodb",
+    "mongoose",
+    "postgresql"
+  ],
+  "author": "Ezekiel Oladejo <iamwebwiz@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iamwebwiz/scribbblr/issues"
