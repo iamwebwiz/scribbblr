@@ -19,6 +19,7 @@
   "homepage": "https://github.com/iamwebwiz/scribbblr#readme",
   "dependencies": {
     "chalk": "^2.4.2",
-    "commander": "^2.20.0"
+    "commander": "^2.20.0",
+    "dotenv": "^8.2.0"
   }
 }
