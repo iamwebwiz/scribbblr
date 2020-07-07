@@ -42,8 +42,15 @@ const newScribbble = (title, content, date) => {
       chalk.red('This scribbble title already exist. Please try another.')
     )
   } else {
-    scribbblesArr.push({ title: title, content: content, date: date })
-    storeScribbbles(scribbblesArr)
+    if (storage === 'file') {
+      scribbblesArr.push({ title: title, content: content, date: date })
+      storeScribbbles(scribbblesArr)
+    }
+
+    if (storage === 'mongo') {
+      MongoService.newScribbble(title, content, date)
+    }
+
     console.log(chalk.green('New scribbble saved successfully.'))
   }
 }
