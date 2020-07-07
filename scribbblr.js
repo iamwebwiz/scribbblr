@@ -1,10 +1,19 @@
 const fs = require('fs')
 const chalk = require('chalk')
+const MongoService = require('./services/MongoService')
+
+const storage = process.env.STORAGE
 
 const fetchScribbbles = () => {
   try {
-    const scribbbles = fs.readFileSync('./scribbbles.json', 'utf8')
-    return JSON.parse(scribbbles)
+    if (storage === 'file') {
+      const scribbbles = fs.readFileSync('./scribbbles.json', 'utf8')
+      return JSON.parse(scribbbles)
+    }
+
+    if (storage === 'mongo') {
+      return JSON.parse(MongoService.fetchScribbbles())
+    }
   } catch (err) {
     return []
   }
