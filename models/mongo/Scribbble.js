@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const ScribbbleSchema = new mongoose.Schema({
   title: {
@@ -18,6 +18,6 @@ const ScribbbleSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
-})
+});
 
-module.exports = mongoose.model('Scribbble', ScribbbleSchema)
+module.exports = mongoose.model("Scribbble", ScribbbleSchema);
